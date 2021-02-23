@@ -1,30 +1,55 @@
 *{
-    border: 0;
-    padding: 0;
+   
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
-body{
-    width: 80vw;
-    height: 0;
+body{ 
+    border: 0;
+    padding: 0;
     margin: 50px;
     
 }
 
-.navegation{
-    padding: 0;
-    margin: 0;
+.nav-bar{ /*Classe que pega toda a header*/
+    display: flex; /*flex box para os elementos se alinharem lado a lado*/
+    justify-content: space-between; /*conteudo o maximo espaçado*/
+    align-items: center; /*centralizar itens verticalmente*/
+    
+   
 }
 
+.nav-links ul{ /*ul que está dentro da minha classe nav links*/
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+
 li{
-    display: inline-block;
     list-style: none;
     margin: 10px;
-    position: relative;
-    bottom: 50px;
-    left: 100%;
-    
 }
+
+
+.toggle-button{ /*contanier onde o .bar é child*/
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 7.5%;
+    left: 80%;
+    width: 30px;
+    height: 21px;
+}
+
+
+.toggle-button .bar{ /*estilo da barra do menu*/
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+
 
 a[title=""]{ /*tags a que possuem title*/
     text-decoration: none;
@@ -37,14 +62,26 @@ a[title=""]:hover{ /*hover das tags a que possuem title*/
 }
 
 #main-content{
-    margin: 0 0 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; /*gerar quebra de linha*/
+    margin: 0 0 0px 20px;
+    max-width: 1340px;
+    
 }
 
+
 img{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;*/ 
     max-width: 80%;
     max-height: 80%;
     position: absolute;
-    left: 25%;
+    left: 20%;
+    top: 20%;
     z-index: -1;
 }
 
@@ -94,7 +131,7 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
 @media (max-width: 985px){
     img{
         max-width: 50%; /*500px*/
-        min-width: 400px;
+        min-width: 500px;
         position: absolute;
         bottom: 50%;
         left: 22%
@@ -104,12 +141,84 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
 
 
     .main-content-texts{
-        margin-top: 18rem;
+        margin-top: 25rem;
+       
+    }
+
+   
+}
+
+
+@media (max-width: 600px){ /*aqui o toggle button aparece*/
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-links ul{
+        display: flex;
+    }
+
+    #main-content{
         text-align: center;
+    }
+
+    img{
+        max-width: 50%; /*500px*/
+        min-width: 400px;
+        position: absolute;
+        bottom: 40%;
+        left: 15%
+        
+    
+    }
+
+    .nav-bar{
+        flex-direction: column;
+    }
+
+    .nav-links ul{
+        display: none;
+        flex-direction: row;
+       
+
+    }
+
+    .nav-links.active{
+        display: flex;
     }
 }
 
-@media (min-width: 985px){
 
+@media (max-width: 363px){ /*aqui o toggle button aparece*/
+    .toggle-button{
+        display: flex;
+    }
+
+    .nav-bar{
+        flex-direction: row;
+    }
+
+    .nav-links ul{
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+  
+
+    #main-content{
+        text-align: center;
+    }
+
+    img{
+        max-width: 50%; /*500px*/
+        min-width: 400px;
+        position: absolute;
+        bottom: 0%;
+        left: 0%
+        
+    
+    }
 }
-
