@@ -77,11 +77,11 @@ img{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;*/ 
-    max-width: 80%;
-    max-height: 80%;
+    width: 70%;
     position: absolute;
-    left: 20%;
-    top: 20%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-30%, -40%);
     z-index: -1;
 }
 
@@ -128,14 +128,12 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
 }
 
 
-@media (max-width: 985px){
+@media (max-width: 61.56em){
     img{
-        max-width: 50%; /*500px*/
-        min-width: 500px;
-        position: absolute;
-        bottom: 50%;
-        left: 22%
-        
+        width: 50%; 
+        min-width: 600px;
+        padding-bottom: 12em;
+        transform: translate(-50%, -50%);  
     
     }
 
@@ -149,7 +147,7 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
 }
 
 
-@media (max-width: 600px){ /*aqui o toggle button aparece*/
+@media (max-width: 37.5em){ /*aqui o toggle button aparece*/
     .toggle-button{
         display: flex;
     }
@@ -163,17 +161,13 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
     }
 
     img{
-        max-width: 50%; /*500px*/
-        min-width: 400px;
-        position: absolute;
-        bottom: 40%;
-        left: 15%
-        
+        width: 50%; 
+        min-width: 500px;   
     
     }
 
     .nav-bar{
-        flex-direction: column;
+        flex-direction: none;
     }
 
     .nav-links ul{
@@ -182,20 +176,16 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
        
 
     }
-
-    .nav-links.active{
-        display: flex;
-    }
 }
 
 
-@media (max-width: 363px){ /*aqui o toggle button aparece*/
+@media (max-width: 29.68em){ 
     .toggle-button{
         display: flex;
     }
 
     .nav-bar{
-        flex-direction: row;
+        flex-direction: none;
     }
 
     .nav-links ul{
@@ -203,22 +193,18 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         flex-direction: column;
     }
 
-    .nav-links.active{
-        display: flex;
-    }
-  
-
     #main-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
     }
 
+
     img{
-        max-width: 50%; /*500px*/
-        min-width: 400px;
-        position: absolute;
-        bottom: 0%;
-        left: 0%
-        
-    
+        width: 50%;
+        min-width: 400px; 
+
     }
+
 }
