@@ -193,18 +193,15 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         flex-direction: column;
     }
 
-    #main-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-
     img{
         width: 50%;
         min-width: 400px; 
 
+    }
+
+    .main-content-texts{
+        margin-top: 22rem;
+       
     }
 
 }
