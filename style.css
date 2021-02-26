@@ -160,6 +160,12 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         text-align: center;
     }
 
+    .main-content-texts{
+        text-align: center;
+       
+    }
+
+
     img{
         width: 50%; 
         min-width: 500px;   
