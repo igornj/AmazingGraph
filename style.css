@@ -210,4 +210,11 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
        
     }
 
+    a[href="https"]{ /*tags a que possuem https*/
+        padding: 10px 40px;
+        border-radius: 8px;
+        
+    
+    }
+
 }
