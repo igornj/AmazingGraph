@@ -152,9 +152,6 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         display: flex;
     }
 
-    .nav-links ul{
-        display: flex;
-    }
 
     #main-content{
         text-align: center;
@@ -172,16 +169,16 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
     
     }
 
-    .nav-bar{
-        flex-direction: none;
-    }
 
     .nav-links ul{
-        display: none;
         flex-direction: row;
+        position: absolute;
+        top: 15%;
+        left: 30%;
        
-
     }
+
+
 }
 
 
@@ -190,13 +187,12 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         display: flex;
     }
 
-    .nav-bar{
-        flex-direction: none;
-    }
-
+ 
     .nav-links ul{
-        display: none;
-        flex-direction: column;
+        flex-direction: row;
+        position: absolute;
+        top: 15%;
+        left: 10%;
     }
 
     img{
@@ -216,5 +212,7 @@ a[href="https"]:hover{ /*hover das tags a que possuem https*/
         
     
     }
+
+    
 
 }
