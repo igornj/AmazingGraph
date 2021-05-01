@@ -1,4 +1,4 @@
-#AmazingGraph
+# AmazingGraph
 Challenge from:  https://devchallenge.com.br/challenges
 
 VERCEL PREVIEW: https://amazing-graph-oec8l6ozz-igornj.vercel.app
